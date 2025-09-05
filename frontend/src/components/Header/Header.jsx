@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import portfolio_logo from "../../Assets/portfolio_logo.png";
+import portfolio_logo from "../../Assets/Portfolio_logo.png";
 import "./Header.css";
 
 export default function Header() {
