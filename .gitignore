@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# environment variables
+.env
+
+# other files you might want to ignore
+.DS_Store
+npm-debug.log

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,
+textarea,
+button,
+a,
+div,
+span,
+p {
+  font-family: "Clarraph-Heavy", sans-serif !important;
+  letter-spacing: 1px;
+}
+
+body {
+  color: white;
+  min-height: 100%;
+  font-family: "Clarraph-Heavy", sans-serif;
+  width: 100%;
+  margin: auto;
+  padding: 75px;
+  overflow-y: auto;
+}
+nav a {
+  margin: 15px;
+  text-decoration: none;
+  color: #007acc;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+} /* removes horizontal scroll */
+/* Home page body with background image */
+body.home-body {
+  background-image: url("Assets/Main_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-attachment: fixed;
+  color: white; /* Optional: adjust text color */
+}
+
+/* Other pages body with solid color */
+body.other-body {
+  background-color: #222c36;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  color: white;
+}

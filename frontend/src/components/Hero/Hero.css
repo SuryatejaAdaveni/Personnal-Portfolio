@@ -1,0 +1,137 @@
+.hero {
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1.5rem 3rem 1.5rem;
+  background: rgba(30, 30, 40, 0.83);
+  border-radius: 16px;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.21);
+  border: 2px solid rgba(200, 200, 255, 0.15);
+  backdrop-filter: blur(6px);
+  flex-direction: column;
+  align-items: center;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+  width: 90%;
+}
+
+.hero-card h1 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.hero-name {
+  color: #4cfbe2;
+  letter-spacing: 4px;
+  font-family: "Orbitron", "Courier New", monospace;
+  font-size: 32;
+  font-weight: bold;
+  display: inline-block;
+  text-shadow: 0 2px 14px #0cf, 0 0px 2px #111;
+  margin-left: 0.3rem;
+}
+
+.hero-role {
+  color: #dbeaff;
+  font-size: 1.22rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.hero-socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-socials a {
+  color: #fff;
+  font-size: 1.7rem;
+  transition: color 0.22s;
+  opacity: 0.85;
+}
+
+.hero-socials a:hover {
+  color: #4cfbe2;
+  text-shadow: 0 0 4px #00fff7, 0 0 5px #00fff7;
+}
+.hero-socials a {
+  position: relative;
+  color: #fff;
+  font-size: 1.7rem;
+  transition: color 0.22s;
+  opacity: 0.85;
+}
+
+/* Tooltip container */
+.hero-socials a:hover {
+  color: #4cfbe2;
+}
+
+/* Tooltip text */
+.hero-socials a::after {
+  content: attr(data-tooltip); /* Text from data-tooltip attribute */
+  position: absolute;
+  bottom: 130%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4cfbe2;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+.hero-socials a:hover::after {
+  opacity: 1;
+}
+
+/* Optional: Tooltip arrow */
+.hero-socials a::before {
+  content: "";
+  position: absolute;
+  bottom: 118%;
+  left: 50%;
+  transform: translateX(+50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #4cfbe2 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hero-socials a:hover::before {
+  opacity: 1;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

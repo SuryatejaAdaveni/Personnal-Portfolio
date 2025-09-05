@@ -1,0 +1,256 @@
+.profile-page {
+  display: flex;
+  gap: 40px; /* 2.5rem ≈ 40px */
+  padding: 56px 32px; /* 3.5rem 2rem */
+  background: transparent;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Left Panel */
+.profile-left {
+  background: rgba(24, 31, 42, 0.98);
+  border-radius: 20px;
+  padding: 32px 32px 32px 32px; /* 2rem */
+  min-width: 350px;
+  max-width: 450px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar {
+  width: 195px;
+  height: 195px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 28px; /* 1.8rem */
+  border: 6px solid #222c36;
+  background: #232738;
+}
+
+.profile-name {
+  font-family: "Orbitron", "Courier New", monospace;
+  color: #fff;
+  font-size: 32px; /* 2rem */
+  text-align: center;
+  margin-bottom: 11px; /* 0.7rem */
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.profile-title {
+  color: #3efec2;
+  font-size: 19px; /* 1.18rem */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px; /* 2rem */
+  letter-spacing: 1px;
+}
+
+.profile-contact div {
+  color: #aef8f8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px; /* 1rem */
+  font-size: 16px; /* 1rem */
+  word-break: break-all;
+}
+
+.profile-contact svg {
+  color: #3efec2;
+  font-size: 19px; /* 1.17em ~ 19px */
+}
+.download-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 12px 34px;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #061028;
+  background: linear-gradient(90deg, #36ffc1 60%, #3ee6fe 100%);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 18px rgba(59, 255, 207, 0.14);
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.download-resume-btn:hover {
+  background: linear-gradient(90deg, #3ee6fe 10%, #36ffc1 100%);
+  color: #232738;
+  transform: translateY(-2px) scale(1.037);
+  box-shadow: 0 4px 24px 0 rgba(59, 255, 207, 0.23);
+}
+
+.download-icon {
+  font-size: 1.25em;
+}
+
+/* Right Panel */
+.profile-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* 2.2rem ≈ 35px */
+}
+
+/* About Section, Skills, Education */
+.about-section,
+.skills-section,
+.education-section {
+  background: rgba(24, 31, 42, 0.98);
+  border-radius: 20px;
+  padding: 32px 35px; /* 2rem 2.2rem */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.11);
+  margin-bottom: 11px; /* 0.7rem */
+}
+
+.section-title {
+  font-family: "Orbitron", "Courier New", monospace;
+  color: #fff;
+  font-size: 22px; /* 1.38rem */
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.section-underline {
+  height: 3px;
+  width: 250px;
+  background: linear-gradient(90deg, #36ffc1 60%, transparent 100%);
+  border-radius: 2px;
+  margin: 6px 0 21px 0; /* 0.35rem 0 1.3rem */
+}
+
+/* About section text */
+.about-section p {
+  color: #d2eaf3;
+  font-size: 18px; /* 1.14rem */
+  margin: 0 0 18px 0; /* 0 0 1.1rem 0 */
+  line-height: 1.72;
+}
+
+/* Technical Skills Bar container */
+.skills-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px; /* 1.4rem */
+  margin-top: 16px; /* 1rem */
+  justify-content: flex-start;
+}
+
+/* Single Skill box */
+.skill-box {
+  display: flex;
+  align-items: center;
+  gap: 11px; /* 0.7rem */
+  padding: 10px 16px; /* 0.65rem 1rem */
+  background: rgba(48, 60, 90, 0.85);
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(0, 255, 199, 0.35);
+  font-weight: 600;
+  color: #a0eefd;
+  font-size: 17px; /* 1.05rem */
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  background-color: rgba(36, 202, 164, 0.85);
+}
+
+.skill-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Education */
+.education-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0; /* 0.6rem 0 0 0 */
+}
+
+.education-section li {
+  color: #eee;
+  margin-bottom: 19px; /* 1.2rem */
+  font-size: 17px; /* 1.08rem */
+  line-height: 1.5;
+}
+
+.education-section strong {
+  color: #36ffc1;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .profile-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; /* 2rem */
+    padding: 32px 10px; /* 2rem 0.6rem */
+  }
+
+  .profile-left {
+    max-width: 100%;
+    margin-bottom: 40px; /* 2.5rem */
+  }
+}
+
+/* Animations */
+.profile-page,
+.profile-left,
+.profile-right,
+.about-section,
+.skills-section,
+.education-section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation-fill-mode: forwards;
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+/* Staggered animation delays */
+.profile-page {
+  animation-delay: 0.2s;
+}
+
+.profile-left {
+  animation-delay: 0.4s;
+}
+
+.profile-right {
+  animation-delay: 0.6s;
+}
+
+.about-section {
+  animation-delay: 0.8s;
+}
+
+.skills-section {
+  animation-delay: 1s;
+}
+
+.education-section {
+  animation-delay: 1.2s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
