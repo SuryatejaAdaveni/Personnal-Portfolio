@@ -17,9 +17,9 @@ export default function Profile() {
       <div className="profile-left">
         <img src={profileImg} alt="Profile" className="profile-avatar" />
         <h2 className="profile-name">
-          VIJAYA BHASKAR REDDY
+          Surya Teja
           <br />
-          VENNA
+          Adaveni
         </h2>
         <div className="profile-title">
           Software Engineer | Fullstack Developer
@@ -59,8 +59,10 @@ export default function Profile() {
           <h3 className="section-title">ABOUT ME</h3>
           <div className="section-underline"></div>
           <p>
-            Hello! I’m Surya Teja Adaveni, a passionate Software Engineer with
-            expertise in Fullstack Development.
+            Hello. My name is Surya Teja Adaveni, and I am a Software Engineer
+            and a Full-stack Developer. I am passionate about creating
+            applications, and I bring a strong background in both front-end and
+            back-end technologies.
           </p>
           <p>
             With experience in designing and implementing complex web
