@@ -6,15 +6,9 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import profileImg from "../../Assets/Profile1.png"; // Use your image path
+import profileImg from "../../Assets/Profile1.png";
 import "./Profile.css";
-import resume from "../../Assets/SuryaTeja_Adaveni_Resume.pdf";
-import html from "../../Assets/html-logo.webp";
-import css from "../../Assets/css-logo.png";
-import js from "../../Assets/js-logo.png";
-import java from "../../Assets/java-logo.png";
-import mysql from "../../Assets/mysql-logo.png";
-import react from "../../Assets/react-logo.png";
+import { resume, html, css, js, java, mysql, react } from "../../Assets";
 
 export default function Profile() {
   return (
@@ -46,14 +40,8 @@ export default function Profile() {
             <FaMapMarkerAlt /> Bangalore ,Karnataka , India
           </div>
         </div>
-        <a
-          href={resume} // Or your actual resume path
-          download
-          className="download-resume-btn"
-        >
-          <span className="download-icon">&#8681;</span>{" "}
-          {/* Unicode down arrow icon */}
-          Download Resume
+        <a href={resume} download className="download-resume-btn">
+          <span className="download-icon">&#8681;</span> Download Resume
         </a>
       </div>
       {/* Right Content */}
