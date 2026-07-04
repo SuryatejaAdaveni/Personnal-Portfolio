@@ -54,13 +54,13 @@ export default function Contact() {
         if (response.status === 0) {
           // Network error or CORS issue
           throw new Error(
-            "Cannot connect to server. Please check if the backend is running on port 5000."
+            "Cannot connect to server. Please check if the backend is running on port 5000.",
           );
         } else {
           // Server returned an error
           const errorData = await response.json().catch(() => ({}));
           throw new Error(
-            errorData.message || `Server error: ${response.status}`
+            errorData.message || `Server error: ${response.status}`,
           );
         }
       }
@@ -80,8 +80,11 @@ export default function Contact() {
         <h1>GET IN TOUCH</h1>
         <div className="underline"></div>
         <p>
-          I'm currently looking for new opportunities. Whether you have a
-          question or just want to say hi, I'll try my best to get back to you!
+          Thank you for visiting my portfolio. I'm actively seeking Software
+          Engineer opportunities where I can contribute, learn, and grow. If
+          your company is looking for a motivated developer with a strong
+          foundation in Java, React, JavaScript, and SQL, I'd be delighted to
+          discuss how I can add value to your organization.
         </p>
       </div>
 
@@ -118,7 +121,7 @@ export default function Contact() {
 
             <div className="contact-item">
               <a
-                href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu"
+                href="https://www.google.com/maps/place/Rainbow+CoLiving+pg/@12.924557,77.6090904,1698m/data=!3m2!1e3!5s0x3bae14553cb77dc3:0xdc9e9d555bab3b14!4m6!3m5!1s0x3bae157875c64cdd:0x28008e9eb93e9979!8m2!3d12.9246087!4d77.6090774!16s%2Fg%2F11l_1bgns1?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-icon location"

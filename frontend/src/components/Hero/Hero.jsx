@@ -10,10 +10,10 @@ export default function Hero() {
           Hello There, I'm
           <span className="hero-name"> Surya Teja Adaveni</span>
         </h1>
-        <p className="hero-role">Software Engineer | Fullstack Developer</p>
+        <p className="hero-role">Software Engineer</p>
         <div className="hero-socials">
           <a
-            href="https://github.com/"
+            href="https://github.com/SuryatejaAdaveni"
             target="_blank"
             aria-label="GitHub"
             data-tooltip="GitHub"
@@ -21,7 +21,7 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/adaveni-surya-teja-851793317/"
             target="_blank"
             aria-label="LinkedIn"
             data-tooltip="LinkedIn"
@@ -29,7 +29,7 @@ export default function Hero() {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your_email@example.com"
+            href="asurya2022@gmail.com"
             aria-label="Email"
             data-tooltip="Email"
           >

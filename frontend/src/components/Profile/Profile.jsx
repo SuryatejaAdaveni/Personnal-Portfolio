@@ -9,6 +9,12 @@ import {
 import profileImg from "../../Assets/Profile1.png"; // Use your image path
 import "./Profile.css";
 import resume from "../../Assets/SuryaTeja_Adaveni_Resume.pdf";
+import html from "../../Assets/html-logo.webp";
+import css from "../../Assets/css-logo.png";
+import js from "../../Assets/js-logo.png";
+import java from "../../Assets/java-logo.png";
+import mysql from "../../Assets/mysql-logo.png";
+import react from "../../Assets/react-logo.png";
 
 export default function Profile() {
   return (
@@ -39,7 +45,7 @@ export default function Profile() {
             https://www.linkedin.com/in/adaveni-suryateja-851793317
           </div>
           <div>
-            <FaMapMarkerAlt /> Chennai ,Tamil Nadu , India
+            <FaMapMarkerAlt /> Bangalore ,Karnataka , India
           </div>
         </div>
         <a
@@ -85,52 +91,28 @@ export default function Profile() {
           <div className="section-underline"></div>
           <div className="skills-boxes">
             <div className="skill-box">
-              <img
-                src="/path/to/html-logo.png"
-                alt="HTML"
-                className="skill-logo"
-              />
-              <span>HTML5</span>
-            </div>
-            <div className="skill-box">
-              <img
-                src="/path/to/css-logo.png"
-                alt="CSS"
-                className="skill-logo"
-              />
-              <span>CSS3</span>
-            </div>
-            <div className="skill-box">
-              <img
-                src="/path/to/js-logo.png"
-                alt="JavaScript"
-                className="skill-logo"
-              />
-              <span>JavaScript</span>
-            </div>
-            <div className="skill-box">
-              <img
-                src="/path/to/react-logo.png"
-                alt="ReactJS"
-                className="skill-logo"
-              />
-              <span>ReactJS</span>
-            </div>
-            <div className="skill-box">
-              <img
-                src="/path/to/java-logo.png"
-                alt="Java"
-                className="skill-logo"
-              />
+              <img src={java} alt="Java" className="skill-logo" />
               <span>Java</span>
             </div>
             <div className="skill-box">
-              <img
-                src="/path/to/mysql-logo.png"
-                alt="MySQL"
-                className="skill-logo"
-              />
+              <img src={mysql} alt="MySQL" className="skill-logo" />
               <span>MySQL</span>
+            </div>
+            <div className="skill-box">
+              <img src={html} alt="HTML" className="skill-logo" />
+              <span>HTML5</span>
+            </div>
+            <div className="skill-box">
+              <img src={css} alt="CSS" className="skill-logo" />
+              <span>CSS3</span>
+            </div>
+            <div className="skill-box">
+              <img src={js} alt="JavaScript" className="skill-logo" />
+              <span>JavaScript</span>
+            </div>
+            <div className="skill-box">
+              <img src={react} alt="ReactJS" className="skill-logo" />
+              <span>ReactJS</span>
             </div>
           </div>
         </div>
