@@ -27,9 +27,7 @@ export default function Profile() {
           <br />
           Adaveni
         </h2>
-        <div className="profile-title">
-          Software Engineer | Fullstack Developer
-        </div>
+        <div className="profile-title">Software Engineer</div>
         <div className="profile-contact">
           <div>
             <FaEnvelope /> asurya2022@gmail.com
@@ -65,10 +63,9 @@ export default function Profile() {
           <h3 className="section-title">ABOUT ME</h3>
           <div className="section-underline"></div>
           <p>
-            Hello. My name is Surya Teja Adaveni, and I am a Software Engineer
-            and a Full-stack Developer. I am passionate about creating
-            applications, and I bring a strong background in both front-end and
-            back-end technologies.
+            Hello. My name is Surya Teja Adaveni, and I am a Software Engineer.
+            I am passionate about creating applications, and I bring a strong
+            background in both front-end and back-end technologies.
           </p>
           <p>
             With experience in designing and implementing complex web
